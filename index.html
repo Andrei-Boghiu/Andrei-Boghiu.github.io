@@ -1,24 +1,452 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Andrei Boghiu</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js' defer></script>
-</head>
-<body>
-    <h1 class="magic">Under <span class="magic">Construction...</span></h1>
-    <p class="magic">Please wait...</p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=yes"
+    />
+    <title>Andrei-Valentin Boghiu</title>
+    <meta
+      name="description"
+      content="Andrei-Valentin Boghiu is a Developer who builds websites, projects in Node.js, and more..."
+    />
 
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet" />
 
-    <footer>
-        <p>This is the footer</p>
+    <!--vendors styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      defer
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      defer
+    ></script>
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <!--navigation-->
+    <section class="smart-scroll">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <a class="navbar-brand heading-black" href="index.html">
+            Andrei-Valentin Boghiu
+          </a>
+          <button
+            class="navbar-toggler navbar-toggler-right border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span data-feather="grid"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link page-scroll text-primary"
+                  href="https://www.linkedin.com/in/andreiboghiu/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!--hero header-->
+    <section class="py-7 py-md-0 bg-hero" id="home">
+      <div class="container">
+        <div class="row vh-md-100">
+          <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+            <h1 class="heading-black text-capitalize">
+              Welcome to my<br />
+              Web Development <span class="magic">Wonderland</span>
+            </h1>
+            <p class="lead py-3">
+              The Place Where Imagination Meets Functionality for Stunning
+              Online Experiences!
+            </p>
+            <button
+              class="btn btn-primary d-inline-flex flex-row align-items-center"
+            >
+              Contact me
+              <em class="ml-2" data-feather="arrow-right"></em>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="pt-6 pb-7">
+      <div class="container">
+        <div class="row" id="about">
+          <div class="col-md-6 mx-auto text-center">
+            <h2 class="heading-black">Hey there! I'm Andrei,</h2>
+            <p class="text-primary lead">
+              A passionate developer dedicated to bringing digital ideas to
+              life.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-10 mx-auto">
+            <div class="row feature-boxes">
+              <div class="col-md-6 box">
+                <div class="icon-box box-primary">
+                  <div class="icon-box-inner">
+                    <span data-feather="edit-3" width="35" height="35"></span>
+                  </div>
+                </div>
+                <h5>Create once. Share everywhere.</h5>
+                <p class="text-muted">
+                  That's the philosophy I embrace as a digital enthusiast. With
+                  a passion for simplifying the complexities of online presence,
+                  my mission is to help you amplify your message and reach your
+                  target audience effortlessly
+                </p>
+              </div>
+              <div class="col-md-6 box">
+                <div class="icon-box box-success">
+                  <div class="icon-box-inner">
+                    <span data-feather="monitor" width="35" height="35"></span>
+                  </div>
+                </div>
+                <h5>Unlimited Revisions</h5>
+                <p class="text-muted">
+                  Because your satisfaction matters most, I offer unlimited
+                  revisions to ensure that every aspect of your project meets
+                  your expectations. I believe in providing you with the best
+                  possible outcome, tailored to your unique vision.
+                </p>
+              </div>
+              <div class="col-md-6 box">
+                <div class="icon-box box-danger">
+                  <div class="icon-box-inner">
+                    <span data-feather="layout" width="35" height="35"></span>
+                  </div>
+                </div>
+                <h5>Beautiful layouts</h5>
+                <p class="text-muted">
+                  Whether it's a website, an app, or any digital project, I
+                  believe in the power of a well-crafted layout to make a
+                  lasting impression. From striking color palettes to harmonious
+                  typography and intuitive user experiences, I carefully
+                  consider every element to ensure your project stands out from
+                  the crowd.
+                </p>
+              </div>
+              <div class="col-md-6 box">
+                <div class="icon-box box-info">
+                  <div class="icon-box-inner">
+                    <span data-feather="globe" width="35" height="35"></span>
+                  </div>
+                </div>
+                <h5>Available globally</h5>
+                <p class="text-muted">
+                  Distance is no longer a barrier in our connected world, as I
+                  bring my expertise right to your virtual doorstep. With
+                  seamless communication and collaboration tools, I ensure that
+                  regardless of your location, you receive top-notch service and
+                  support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--pricing section-->
+    <section
+      class="py-7 bg-dark section-angle top-right bottom-right"
+      id="pricing"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h2 class="text-white heading-black">Pricing Plans.</h2>
+            <p class="text-light lead">I'll make it fit your budget</p>
+          </div>
+        </div>
+        <!--pricing tables-->
+        <div class="row pt-5 pricing-table">
+          <div class="col-12 mx-auto">
+            <div class="card-deck pricing-table">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title pt-3">Landing Pages</h3>
+                  <h2 class="card-title text-primary mb-0 pt-4">$59</h2>
+                  <div class="text-muted font-weight-medium mt-2">
+                    per project
+                  </div>
+                  <ul class="list-unstyled pricing-list">
+                    <li>1 Landing Page</li>
+                    <li>Responsive Design</li>
+                    <li>Basic SEO optimization</li>
+                    <li>Basic Support</li>
+                  </ul>
+                  <a href="https://www.linkedin.com/in/andreiboghiu/" class="btn btn-primary"> Get in touch </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title pt-3">Websites</h3>
+                  <h2 class="card-title text-info mb-0 pt-4">$349</h2>
+                  <div class="text-muted font-weight-medium mt-2">
+                    per project
+                  </div>
+                  <ul class="list-unstyled pricing-list">
+                    <li>1 Functional Website</li>
+                    <li>E-commerce Functionality</li>
+                    <li>Extensive SEO Optimization</li>
+                    <li>Premium Support</li>
+                  </ul>
+                  <a href="https://www.linkedin.com/in/andreiboghiu/" class="btn btn-info"> Get in touch </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title pt-3">Applications</h3>
+                  <h2 class="card-title text-primary mb-0 pt-4">$899</h2>
+                  <div class="text-muted font-weight-medium mt-2">
+                    per project
+                  </div>
+                  <ul class="list-unstyled pricing-list">
+                    <li>1 Full Stack Application</li>
+                    <li>Dashboard Integration</li>
+                    <li>Extensive SEO Optimization</li>
+                    <li>Premium Support</li>
+                  </ul>
+                  <a href="https://www.linkedin.com/in/andreiboghiu/" class="btn btn-primary"> Get in touch </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col-md-4 mr-auto">
+            <h3>Everything is covered.</h3>
+            <p class="lead">
+              Whether you're a freelancer, an entrepreneur, a small business
+              owner, or a large enterprise, I'm here to assist you in achieving
+              your digital goals.
+            </p>
+          </div>
+          <div class="col-md-7 offset-md-1">
+            <ul class="features-list">
+              <li>Speed Optimization</li>
+              <li>Custom Asset Design</li>
+              <li>MailChimp integration</li>
+              <li>Stripe integration</li>
+              <li>100 refund guarantee</li>
+              <li>Advance SEO tools</li>
+              <li>Source Files</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div
+            class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center"
+          >
+            <h3>Having trouble making a decision?</h3>
+            <p class="mb-1 text-info">
+              Let's chat and find the perfect solution together!
+            </p>
+            <br />
+            <p class="mb-5">
+              I offer a free consultation meeting where we can discuss your
+              goals, requirements, and any concerns you may have. During this
+              personalized session, I'll provide expert insights, answer your
+              questions, and offer tailored recommendations to help you make an
+              informed decision.
+            </p>
+            <div class="col-md-6 mx-auto text-center">
+              <a
+                href="https://www.linkedin.com/in/andreiboghiu/"
+                class="btn btn-primary" target="_blank"
+                >Schedule A Consultancy Meeting</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--faq section-->
+    <section class="py-7" id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h2>Frequently Asked Questions</h2>
+            <p class="text-muted lead">Answers to most common questions.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-10 mx-auto">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <h6>How long does it take to complete a project?</h6>
+                <p class="text-muted">
+                  The project timeline depends on various factors such as the
+                  complexity, scope, and specific requirements of your project.
+                  Once we discuss your needs, I can provide you with an
+                  estimated timeline.
+                </p>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h6>Do you provide post-project website maintenance</h6>
+                <p class="text-muted">
+                  Absolutely! For finished projects I offer maintenance and
+                  support services, I offer a separate package to ensure your
+                  website stays up-to-date, secure, and optimized for
+                  performance.
+                </p>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h6>
+                  Do you provide hosting and domain registration services?
+                </h6>
+                <p class="text-muted">
+                  While I do not offer hosting and domain registration directly,
+                  I can provide guidance and recommendations for reliable
+                  hosting providers and assist you with the domain registration
+                  process.
+                </p>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h6>
+                  Can you integrate third-party services or APIs into my website
+                  or application?
+                </h6>
+                <p class="text-muted">
+                  Absolutely! I have experience integrating various third-party
+                  services and APIs to add functionality and enhance the
+                  features of your website or application.
+                </p>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h6>
+                  Can you redesign or update an existing website or application?
+                </h6>
+                <p class="text-muted">
+                  Yes, I can help you redesign or update an existing website or
+                  application. We can discuss your requirements and goals to
+                  determine the best approach for enhancing your digital
+                  presence.
+                </p>
+              </div>
+              <div class="col-md-6 mb-5">
+                <h6>
+                  Do you provide training or support after the project is
+                  completed?
+                </h6>
+                <p class="text-muted">
+                  Yes, I offer training and support to ensure you are
+                  comfortable managing your website or application. I can
+                  provide documentation or personalized training sessions based
+                  on your specific requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 mx-auto text-center">
+            <h5 class="mb-4">Have other questions?</h5>
+            <a
+              href="https://www.linkedin.com/in/andreiboghiu/"
+              class="btn btn-primary" target="_blank"
+              >Contact me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 mr-auto">
+            <h5>Thank you for visiting!</h5>
+            <p class="text-muted">
+              Follow me for the latest updates and inspiring content. Let's
+              connect, share ideas, and grow together.<br />
+              Looking forward to connecting with you.
+            </p>
+            <ul class="list-inline social social-sm">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/andreiboghiu/"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/Andrei-Boghiu"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/theshadow1408/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-muted text-center small-xl">
+            &copy; Andrei-Valentin Boghiu
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
 
+    <!--scroll to top-->
+    <div class="scroll-top">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+  </body>
 </html>
